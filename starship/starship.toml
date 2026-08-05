@@ -40,7 +40,7 @@ truncation_symbol = "…/"
 
 [kubernetes]
 disabled = false
-style = "bg:color_orange_darker fg:color_orange_dark"
+style = "bg:color_orange_darker fg:color_text_black"
 format = "[ ⎈ $context ]($style)"
 
 
