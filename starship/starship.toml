@@ -1,0 +1,62 @@
+format = """
+$os\
+$directory\
+$kubernetes\
+[](bg:color_bg_dark)\
+$time\
+$line_break\
+$character\
+"""
+
+palette = "material_orange"
+
+[palettes.material_orange]
+color_orange_dark = '#C65D3A'      
+color_orange_darker = '#8F432C'    
+color_orange_light = '#FFB199'     
+color_orange_accent = '#FF8F6B'    
+
+color_bg_dark = '#242424'          
+color_text_light = '#D6D3D1'      
+color_text_white = '#FAFAF9'
+color_text_black = '#171717'
+
+
+[os]
+disabled = false
+style = "bg:color_orange_accent fg:color_text_black"
+format = "[ $symbol $user ]($style)"
+
+[os.symbols]
+Macos = "꩜"
+
+
+[directory]
+style = "bg:color_orange_dark fg:color_text_white"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+
+[kubernetes]
+disabled = false
+style = "bg:color_orange_darker fg:color_orange_dark"
+format = "[ ⎈ $context ]($style)"
+
+
+[time]
+disabled = false
+time_format = "%Y-%m-%d %H:%M:%S"
+style = "fg:color_text_light bg:color_bg_dark"
+format = "[ $time ]($style)"
+
+
+[character]
+disabled = false
+
+success_symbol = "[❯](bold color_orange_accent)"
+error_symbol = "[❯](bold color_orange_accent)"
+vimcmd_symbol = "[❯](bold color_orange_accent)"
+vimcmd_replace_one_symbol = "[❯](bold color_orange_accent)"
+vimcmd_replace_symbol = "[❯](bold color_orange_accent)"
+vimcmd_visual_symbol = "[❯](bold color_orange_accent)"

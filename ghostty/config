@@ -1,0 +1,21 @@
+# Theme & Appearance
+background-opacity = 0.65
+background-blur-radius = 15
+background-blur=10
+macos-titlebar-style = hidden
+macos-option-as-alt = true
+
+# typography
+font-family = JetBrainsMono Nerd Font
+font-size=14
+font-thicken=true
+font-thicken-strength=1
+adjust-cell-height=1
+
+# Window & Behavior
+window-padding-x = 12
+window-padding-y = 12
+window-decoration = false
+cursor-style = block
+mouse-hide-while-typing = true
+copy-on-select = true
